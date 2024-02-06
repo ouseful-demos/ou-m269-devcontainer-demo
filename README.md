@@ -23,30 +23,13 @@ The VS Code environment is preinstalled with a Git extension.
 If you launch the devcontainer powered Codespace from your own repository you can commit updates back to the repository you started the container from. Updates will also persist inside the container.
 
 
-## Using the Classic Notebook Environment
+## Initialising the environment and Using the Classic Notebook Environment
 
-To access the classic notebook environment, in the VS Code terminal run the command:
+To initialise the environment and to access the classic notebook environment, in the VS Code terminal run the command:
 
-`jupyter nbclassic`
+`start.sh`
 
-
-![Issue 'jupyter nbclassic' command in termnial](images/jupyter_nbclassic_run.png)
-
-This will start the classic notebook server, although when I ran it, it upset the VS Code browser, which prompted from a reload.
-
-![Reload prompt](images/reload_prompt.png)
-
-Clicking the reload button and everything seems to be running okay:
-
-![Jupyter server running log](images/server_running.png)
-
-We now need to expose the server port. In VS Code, select the *Ports* tab and create a new port, setting it to `8888`:
-
-![Add a new exposed port (8888)](images/create_port.png)
-
-If you hover the mouse over this port entry you can raise a menu that will open that location in your browser:
-
-![Open link in browser pop-up](images/open_in_browser.png)
+This will run any required initialisation routines in the container and start the classic notebook server.
 
 Use the password `M269 23J` to access the classic notebook server UI:
 
