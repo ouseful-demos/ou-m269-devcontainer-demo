@@ -28,7 +28,7 @@ To initialise the environment and to access start classic notebook server, the c
 
 *Note that if we do not autorun this command, we can manually issue the `start.sh` command from the VS Code terminal.*
 
-The `.devcontainer` script also exposes port 8888, the default port on which the Jupyter notebook server runs. Select the `ports` tab in VS Code then hover over `8888` port entry to raise a pop-up menu that provides a "globe" link that lets you click to open that location in your web browser.
+The `.devcontainer` script also exposes port 8888, the default port on which the Jupyter notebook server runs. Select the `ports` tab in VS Code then hover over `8888` port entry to raise a pop-up menu that provides a "globe" link that lets you click to open that location in your web browser. *Note that it may take a minue or two for the Jupyter notebook server to actuially start running an appear on the exposed port.*
 
 If we manually run the `start.sh` command, the notebook server port should be forwarded automatically:
 
