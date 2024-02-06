@@ -22,7 +22,6 @@ The VS Code environment is preinstalled with a Git extension.
 
 If you launch the devcontainer powered Codespace from your own repository you can commit updates back to the repository you started the container from. Updates will also persist inside the container.
 
-
 ## Initialising the environment and Using the Classic Notebook Environment
 
 To initialise the environment and to access the classic notebook environment, in the VS Code terminal run the command:
