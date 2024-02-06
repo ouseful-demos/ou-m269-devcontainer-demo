@@ -24,13 +24,13 @@ If you launch the devcontainer powered Codespace from your own repository you ca
 
 ## Initialising the environment and Using the Classic Notebook Environment
 
-To initialise the environment and to access the classic notebook environment, in the VS Code terminal run the command:
+To initialise the environment and to access start classic notebook server, the container runs the `start.sh` command in the background when the container is started (see the `.devcontainer/decontainer.json` `"postStartCommand"` setting).
 
-`start.sh`
+*Note that if we do not autorun this command, we can manually issue the `start.sh` command from the VS Code terminal.*
 
-This will run any required initialisation routines in the container and start the classic notebook server.
+The `.devcontainer` script also exposes port 8888, the default port on which the Jupyter notebook server runs. Select the `ports` tab in VS Code then hover over `8888` port entry to raise a pop-up menu that provides a "globe" link that lets you click to open that location in your web browser.
 
-The notebook server port will be forwarded automatically:
+If we manually run the `start.sh` command, the notebook server port should be forwarded automatically:
 
 ![Automatically forwarded port](images/forwarded_port.png)
 
