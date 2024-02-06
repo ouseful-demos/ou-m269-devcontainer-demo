@@ -1,1 +1,28 @@
+jupyterlab
 
+jupyterlab-ou-brand-extension
+jupyterlab-cell-status-extension
+
+# Error reporting / Linting
+jupyterlab-skip-traceback
+
+# File editing and management
+jupyterlab-git
+
+# Local filesystem access not working in Codespace?
+#jupyterlab-filesystem-access
+jupyter-archive
+
+# Authoring support
+jupyterlab-spellchecker
+
+# Teaching Environment Utilities
+stickyland
+jupyterlab-templates
+
+# Language packs
+jupyterlab-language-pack-fr-FR
+jupyterlab-language-pack-zh-CN
+
+# Resource monitoring / tracking
+jupyter-resource-usage
