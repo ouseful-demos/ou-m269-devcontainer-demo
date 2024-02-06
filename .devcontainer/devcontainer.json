@@ -14,7 +14,7 @@
   //"remoteUser": "root",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "postStartCommand": "", //"nohup start.sh &",
+  "postStartCommand": "nohup bash -c 'start.sh &'",
   "customizations": {
     "codespaces": {
       "openFiles": []
