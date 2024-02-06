@@ -12,7 +12,7 @@
   //"waitFor": "onCreateCommand",
   // For development, it may be useful to be root when connecting via terminal
   //"remoteUser": "root",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "updateContentCommand": "",
   "postCreateCommand": "",
   "postStartCommand": "nohup bash -c 'start.sh &'",
   "forwardPorts": [8888],
