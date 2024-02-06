@@ -1,0 +1,36 @@
+{
+  "image": "mmh352/m269:23j", 
+  "hostRequirements": {
+    //"cpus": 4
+  },
+
+  // Useful docs:
+  // https://containers.dev/implementors/json_reference/#general-properties
+  // https://containers.dev/implementors/json_reference/#_lifecycle-scripts
+
+  "waitFor": "postStartCommand",
+  //"waitFor": "onCreateCommand",
+  // For development, it may be useful to be root when connecting via terminal
+  //"remoteUser": "root",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
+  "postStartCommand": "",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "settings": {
+        // On Mac Arm64, there's a long delay on the container build
+        // https://github.com/microsoft/vscode/issues/179827
+        "extensions.verifySignature": false
+      },
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "ExecutableBookProject.myst-highlight",
+        "ms-toolsai.datawrangler"
+      ]
+    }
+  }
+}
